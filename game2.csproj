@@ -58,7 +58,7 @@
     <GenerateManifests>true</GenerateManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>true</SignManifests>
+    <SignManifests>false</SignManifests>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -98,12 +98,12 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Resource1.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="game2_TemporaryKey.pfx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -142,12 +142,6 @@
     <None Include="Resources\mag.wav" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\playAgain.Image.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\spinChambers.Image.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\button1.Image.png" />
   </ItemGroup>
   <ItemGroup>
@@ -158,6 +152,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\pictureBox2.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playAgain.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spinChambers.Image.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
